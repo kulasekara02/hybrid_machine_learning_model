@@ -1,0 +1,221 @@
+
+<html><head><meta charset='utf-8'><title>Cross-Cultural Hybrid Framework</title>
+<style>body{font-family:Arial;padding:18px} table{border-collapse:collapse} td,th{border:1px solid #ccc;padding:6px}</style>
+</head><body>
+<h1>Predicting Student Academic Success — Hybrid Model</h1>
+<h3>Global Test Metrics</h3>
+<p>AUROC=0.516 | F1=0.805 | P=0.674 | R=1.000 | Acc=0.674 | Threshold=1.0</p>
+<h3>By Country</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>country</th>
+      <th>n</th>
+      <th>auroc</th>
+      <th>f1</th>
+      <th>acc</th>
+      <th>pos_rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LK</td>
+      <td>84</td>
+      <td>0.490434</td>
+      <td>0.800000</td>
+      <td>0.666667</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>LV</td>
+      <td>82</td>
+      <td>0.632277</td>
+      <td>0.836879</td>
+      <td>0.719512</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>DE</td>
+      <td>72</td>
+      <td>0.488511</td>
+      <td>0.789916</td>
+      <td>0.652778</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>IT</td>
+      <td>66</td>
+      <td>0.500000</td>
+      <td>0.810811</td>
+      <td>0.681818</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>66</td>
+      <td>0.561376</td>
+      <td>0.810811</td>
+      <td>0.681818</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>EE</td>
+      <td>38</td>
+      <td>0.544872</td>
+      <td>0.812500</td>
+      <td>0.684211</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>PL</td>
+      <td>35</td>
+      <td>0.340909</td>
+      <td>0.813559</td>
+      <td>0.685714</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>ES</td>
+      <td>31</td>
+      <td>0.504202</td>
+      <td>0.708333</td>
+      <td>0.548387</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>LT</td>
+      <td>26</td>
+      <td>0.586806</td>
+      <td>0.818182</td>
+      <td>0.692308</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>By Region</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>region</th>
+      <th>n</th>
+      <th>auroc</th>
+      <th>f1</th>
+      <th>acc</th>
+      <th>pos_rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Europe</td>
+      <td>204</td>
+      <td>0.463994</td>
+      <td>0.789318</td>
+      <td>0.651961</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>150</td>
+      <td>0.519499</td>
+      <td>0.804781</td>
+      <td>0.673333</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Baltics</td>
+      <td>146</td>
+      <td>0.589411</td>
+      <td>0.827309</td>
+      <td>0.705479</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>By Institution</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>institution</th>
+      <th>n</th>
+      <th>auroc</th>
+      <th>f1</th>
+      <th>acc</th>
+      <th>pos_rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>INST_B</td>
+      <td>255</td>
+      <td>0.491473</td>
+      <td>0.824885</td>
+      <td>0.701961</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>INST_A</td>
+      <td>245</td>
+      <td>0.517605</td>
+      <td>0.784119</td>
+      <td>0.644898</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Fairness Gaps</h3><pre>dp_gap_country    0.0
+dp_gap_region     0.0
+eo_gap_country    0.0
+eo_gap_region     0.0</pre>
+<h3>Calibration bins</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>prob_pred_bin_mean</th>
+      <th>frac_pos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.372000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>0.473176</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>0.564575</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>0.651120</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>0.739285</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>0.824231</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Confusion Matrix</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pred 0</th>
+      <th>Pred 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Actual 0</th>
+      <td>0</td>
+      <td>163</td>
+    </tr>
+    <tr>
+      <th>Actual 1</th>
+      <td>0</td>
+      <td>337</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
